@@ -23,9 +23,9 @@ delta1 = (B1-B0)*pi/180;         % angle of rotation for rise
 delta2 = (B2-B1)*pi/180;         % angle of rotation for dwell (top)
 delta3 = (B3-B2)*pi/180;         % angle of rotation for return
 delta4 = (B4-B3)*pi/180;         % angle of rotation for dwell (bottom)
-%% rise
+%% dwell 
 x1 = zeros(1,length(theta1));
-%% dwell
+%% rise
 x2 = (L/(2*pi))*(((2*pi*(theta2-beta(1)))/delta2)-sin((2*pi*(theta2-beta(1)))/delta2));
 x2 = x2(2:end-1);
 %% return 
